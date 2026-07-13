@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/notes";
+const API = `${import.meta.env.VITE_API_URL}/notes`;
 
 export const getNotes = async () => {
   return axios.get(API);
